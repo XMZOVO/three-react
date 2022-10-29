@@ -1,0 +1,273 @@
+{
+  "accessors": [
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 4348,
+      "max": [
+        1.0,
+        0.7340812683105469,
+        0.18346905708312988
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        0.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 52176,
+      "componentType": 5126,
+      "count": 4348,
+      "max": [
+        0.9999532699584961,
+        0.9999532699584961,
+        0.9999957084655762
+      ],
+      "min": [
+        -0.9999532699584961,
+        -0.9999532699584961,
+        -0.999995768070221
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 24948,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 104352,
+      "componentType": 5126,
+      "count": 1248,
+      "max": [
+        0.6223100423812866,
+        1.0,
+        0.18346905708312988
+      ],
+      "min": [
+        -0.6201363205909729,
+        0.5572160482406616,
+        0.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 119328,
+      "componentType": 5126,
+      "count": 1248,
+      "max": [
+        0.9955750703811646,
+        0.9999532699584961,
+        0.9999549388885498
+      ],
+      "min": [
+        -0.994100034236908,
+        -0.9999532699584961,
+        -0.9999549388885498
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 99792,
+      "componentType": 5125,
+      "count": 7476,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Loose Hand Studio (https://sketchfab.com/kazian)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/overwatch-logo-639a62513d73446eaaca8215b0a79a1d",
+      "title": "Overwatch Logo"
+    },
+    "generator": "Sketchfab-12.67.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 129696,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 134304,
+      "byteOffset": 129696,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 264000,
+      "uri": "scene.bin"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "Material.002",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.07898982435464859,
+          0.08287851065397263,
+          0.08687663823366165,
+          1.0
+        ],
+        "metallicFactor": 0.6900000000000001,
+        "roughnessFactor": 0.12
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Material.001",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.7758222222328186,
+          0.28314873576164246,
+          0.008568125776946545,
+          1.0
+        ],
+        "roughnessFactor": 0.11
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Cylinder_Material.002_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0
+          },
+          "indices": 2,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Cylinder_Material.001_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 4,
+            "POSITION": 3
+          },
+          "indices": 5,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "9431b192f64a4f349f5ba9b70e8cd501.fbx"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4,
+        5
+      ],
+      "matrix": [
+        99.99999931863341,
+        1.0958592847320212e-07,
+        0.011673616218875617,
+        0.0,
+        0.011673616218893314,
+        -1.6292055149413898e-05,
+        -99.99999931863209,
+        0.0,
+        -1.076840557329606e-07,
+        99.99999999999868,
+        -1.629206782816084e-05,
+        0.0,
+        -0.059790968894958496,
+        0.000532117614056915,
+        -0.00668571749702096,
+        1.0
+      ],
+      "name": "Cylinder"
+    },
+    {
+      "mesh": 0,
+      "name": "Cylinder_Material.002_0"
+    },
+    {
+      "mesh": 1,
+      "name": "Cylinder_Material.001_0"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}

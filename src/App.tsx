@@ -1,19 +1,30 @@
-import { Suspense } from 'react'
-import { Canvas } from '@react-three/fiber'
-import { Environment, ContactShadows, OrbitControls, PerspectiveCamera } from '@react-three/drei'
-import Car from './Car'
+import React, { Suspense, useRef } from 'react'
+import { Canvas, ThreeElements, useFrame, useLoader } from '@react-three/fiber'
+import { AccumulativeShadows, Environment, OrbitControls, RandomizedLight, useGLTF } from '@react-three/drei'
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 
 export default function App() {
   return (
-    <Canvas gl={{ toneMappingExposure: 0.7 }}>
-      <Suspense fallback={null}>
-        <Environment files="/old_depot_2k.hdr" ground={{ height: 32, radius: 130 }} />
-        <spotLight angle={1} position={[-80, 200, -100]} intensity={1} />
-        <Car position={[-8, 0, -2]} scale={20} rotation-y={-Math.PI / 4} />
-        <ContactShadows renderOrder={2} frames={1} resolution={1024} scale={120} blur={2} opacity={0.6} far={100} />
-      </Suspense>
-      <OrbitControls enableZoom={false} enablePan={false} minPolarAngle={0} maxPolarAngle={Math.PI / 2.25} makeDefault />
-      <PerspectiveCamera makeDefault position={[-30, 100, 120]} fov={35} />
+    <Canvas shadows camera={{ position: [400, 0, 400  ], fov: 25}}>
+      <GenJi rotation={[-0.63, 0, 0]} scale={2} position={[0, -1.175, 0]} />
+      <OrbitControls autoRotate={false} />
+      <Environment preset="city" />
+      <axesHelper args={[100]}/>
     </Canvas>
   )
+}
+
+function GenJi(props:ThreeElements["mesh"]){
+  const { scene } = useGLTF('/scene.gltf') as {scene: THREE.Group}
+  console.log(scene);
+  
+  scene.rotation.x = Math.PI / 2
+  scene.rotation.z =- Math.PI / 4
+
+  const ref = useRef<THREE.Mesh>(null!)
+  useFrame((state, delta) => {
+    ref.current.rotation.z += 0.03;
+  })
+  
+  return <primitive ref={ref} object={scene} />
 }
