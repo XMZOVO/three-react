@@ -9,7 +9,6 @@ export default function App() {
       <GenJi rotation={[-0.63, 0, 0]} scale={2} position={[0, -1.175, 0]} />
       <OrbitControls autoRotate={false} />
       <Environment preset="city" />
-      <axesHelper args={[100]}/>
     </Canvas>
   )
 }
